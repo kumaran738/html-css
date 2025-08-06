@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID Card - Black & Blue</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #000000, #001f3f, #003366, #0059b3);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(0, 150, 255, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 150, 255, 0.2);
+            padding: 40px;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.07);
+            box-shadow: 0 20px 40px rgba(0, 150, 255, 0.4);
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border: 4px solid #3399ff;
+            box-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+            margin-bottom: 15px;
+            transition: transform 0.5s;
+        }
+
+        .card img:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .card h2 {
+            color: #66ccff;
+            margin: 15px 0 5px;
+            font-size: 24px;
+        }   
+
+        .card p {
+            color: #cceeff;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card button:hover {
+            background: linear-gradient(135deg, #0059b3, #003d99);
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 150, 255, 0.3);
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="WhatsApp Image 2025-07-31 at 8.49.25 PM.jpeg" alt="Profile Image">
+        <h2>Kumaran E</h2>
+        <p>Web Technical Developer</p>
+        <button>Click</button>
+    </div>
+</body>
+</html>
